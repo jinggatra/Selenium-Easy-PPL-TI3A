@@ -14,9 +14,7 @@ async function testing(){
 
     await driver.get("https://www.seleniumeasy.com/test/");
     const WebElement = driver.findElement(By.className("dropdown"));
-    WebElement.selectByVisibleText("Input Forms");
-    const button1 = WebElement[1]
-    await button1.click();
+    // WebElement.selectByVisibleText("Input Forms");
     const Select =new Select(WebElement);
     Select.selectByVisibleText("Input Forms");
 

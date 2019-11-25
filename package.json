@@ -1,0 +1,26 @@
+{
+  "name": "seleniumeasy",
+  "version": "1.0.0",
+  "description": "tugas akhir ppl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinggatra/Selenium-Easy-PPL-TI3A.git"
+  },
+  "keywords": [
+    "master"
+  ],
+  "author": "jinggatra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinggatra/Selenium-Easy-PPL-TI3A/issues"
+  },
+  "homepage": "https://github.com/jinggatra/Selenium-Easy-PPL-TI3A#readme",
+  "devDependencies": {
+    "chromedriver": "^78.0.1",
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  }
+}

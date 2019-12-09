@@ -23,7 +23,7 @@ async function testing(){
 
     // await searchButton.click()
 
-    await driver.sleep(2000)
+    await driver.sleep(10000)
 
     // driver.quit()
 
@@ -42,7 +42,7 @@ async function testing2(){
 
     await searchButton.click()
 
-    await driver.sleep(2000)
+    await driver.sleep(10000)
 
     // const Output = await driver.findElement(webdriver.By.id('display'))
 
@@ -58,25 +58,27 @@ async function testing3(){
     const button = driver.findElement(webdriver.By.xpath("//button[contains(., 'Get Total')]")).click();
 
     // const Output = await driver.findElement(webdriver.By.id('')
-    await driver.sleep(2000)
+    await driver.sleep(10000)
 
-    driver.quit()
+    //driver.quit()
 }
 
 async function testing4(){
     await driver.get('https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html')
     const list = driver.findElement(webdriver.By.id('select-demo'))
-    // const searchInput3 = driver.findElement(webdriver.By.id('sum2')).sendKeys('b')
-
     const listclick = driver.findElement(webdriver.By.xpath("//option[contains(., 'Monday')]")).click();
 
-    // const Output = await driver.findElement(webdriver.By.id('')
-    await driver.sleep(2000)
+    const list2 = driver.findElement(webdriver.By.id('multi-select'))
+    const listclick2 = driver.findElement(webdriver.By.xpath("//option[contains(., 'Ohio')]")).click();
+    const button = await driver.findElement(webdriver.By.id('printMe')).click();
+    
+    await driver.sleep(10000)
+    driver.quit()
 }
 
 // testing();
-// testing2();
-// testing3();
+testing2();
+testing3();
 testing4();
 
 // (async () =>{

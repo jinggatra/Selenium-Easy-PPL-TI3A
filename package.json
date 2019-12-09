@@ -21,6 +21,7 @@
   "homepage": "https://github.com/jinggatra/Selenium-Easy-PPL-TI3A#readme",
   "devDependencies": {
     "chromedriver": "^78.0.1",
+    "nightwatch": "^1.3.2",
     "selenium-webdriver": "^4.0.0-alpha.5"
   }
 }

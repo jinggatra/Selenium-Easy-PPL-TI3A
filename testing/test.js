@@ -63,9 +63,21 @@ async function testing3(){
     driver.quit()
 }
 
-testing();
-testing2();
-testing3();
+async function testing4(){
+    await driver.get('https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html')
+    const list = driver.findElement(webdriver.By.id('select-demo'))
+    // const searchInput3 = driver.findElement(webdriver.By.id('sum2')).sendKeys('b')
+
+    const listclick = driver.findElement(webdriver.By.xpath("//option[contains(., 'Monday')]")).click();
+
+    // const Output = await driver.findElement(webdriver.By.id('')
+    await driver.sleep(2000)
+}
+
+// testing();
+// testing2();
+// testing3();
+testing4();
 
 // (async () =>{
    

@@ -34,6 +34,7 @@ async function testing2(){
     // const searchInput = await driver.findElement(webdriver.By.('search_query'))
 
     // await searchInput.sendKeys('Dr Phil')
+    driver.manage().window().maximize()
 
     const searchInput = await driver.findElement(webdriver.By.id('user-message'))
     await searchInput.sendKeys('Dr Phil')
@@ -52,8 +53,8 @@ async function testing2(){
 
 async function testing3(){
     await driver.get('https://www.seleniumeasy.com/test/basic-first-form-demo.html')
-    const searchInput2 = driver.findElement(webdriver.By.id('sum1')).sendKeys('a')
-    const searchInput3 = driver.findElement(webdriver.By.id('sum2')).sendKeys('b')
+    const searchInput2 = driver.findElement(webdriver.By.id('sum1')).sendKeys('2')
+    const searchInput3 = driver.findElement(webdriver.By.id('sum2')).sendKeys('3')
 
     const button = driver.findElement(webdriver.By.xpath("//button[contains(., 'Get Total')]")).click();
 
@@ -76,10 +77,28 @@ async function testing4(){
     driver.quit()
 }
 
+async function testing5(){
+    await driver.get('https://www.seleniumeasy.com/test/basic-radiobutton-demo.html')
+    // const radio = driver.findElements(webdriver.By.name()).click('optradio');
+    // const radio = driver.findElements(webdriver.By.xpath("//input[contains(., 'Male')]"));
+    // radio.click();
+    // const button = driver.findElements(webdriver.By.id('buttoncheck')).click();
+
+    // const radio1 = driver.findElements(webdriver.By.xpath("//input[contains(., 'Male')]")).click()
+    // const radio2 = driver.findElements(webdriver.By.xpath("//input[contains(., '5 to 15')]")).click();
+
+    // const button1 = driver.findElement(webdriver.By.className('btn btn-default')).click();
+    const button1 = driver.findElement(webdriver.By.getAttribute('value')).click();
+    
+    await driver.sleep(10000)
+    driver.quit()
+}
+
 // testing();
-testing2();
-testing3();
-testing4();
+//testing2();
+// testing3();
+//testing4();
+testing5();
 
 // (async () =>{
    
